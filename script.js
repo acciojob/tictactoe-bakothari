@@ -13,8 +13,8 @@
     ];
 
     submitBtn.addEventListener("click", () => {
-        const player1 = document.getElementById("player-1").value.trim();
-        const player2 = document.getElementById("player-2").value.trim();
+        const player1 = document.getElementById("player-1").value;
+        const player2 = document.getElementById("player-2").value;
 
         if (player1 && player2) {
             players = { X: player1, O: player2 };
