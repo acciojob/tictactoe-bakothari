@@ -1,4 +1,5 @@
- const submitBtn = document.getElementById("submit");
+document.addEventListener("DOMContentLoaded", () => {
+    const submitBtn = document.getElementById("submit");
     const playerInput = document.getElementById("player-input");
     const gameSection = document.getElementById("game");
     const board = document.getElementById("board");
@@ -13,8 +14,8 @@
     ];
 
     submitBtn.addEventListener("click", () => {
-        const player1 = document.getElementById("player-1").value;
-        const player2 = document.getElementById("player-2").value;
+        const player1 = document.getElementById("player-1").value.trim();
+        const player2 = document.getElementById("player-2").value.trim();
 
         if (player1 && player2) {
             players = { X: player1, O: player2 };
@@ -85,3 +86,4 @@
             cell.removeEventListener("click", handleMove);
         });
     }
+});
