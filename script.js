@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     submitBtn.addEventListener("click", () => {
-        const player1 = document.getElementById("player-1").value.trim();
-        const player2 = document.getElementById("player-2").value.trim();
+        const player1 = document.querySelector("#player-1").value.trim();
+        const player2 = document.querySelector("#player-2").value.trim();
 
         if (player1 && player2) {
             players = { X: player1, O: player2 };
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function checkWinner() {
-        const cells = document.querySelectorAll(".cell"); 
+        const cells = document.querySelectorAll(".cell");
         for (let i = 0; i < winPatterns.length; i++) {
             const [a, b, c] = winPatterns[i];
 
