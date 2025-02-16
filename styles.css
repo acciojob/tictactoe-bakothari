@@ -1,1 +1,46 @@
 /*  your css code here. If applicable */
+body {
+
+  text-align: center;
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+
+}
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+ 
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border: 1px solid black;
+  font-size: 2em;
+  cursor: pointer;
+background-color: pink;
+justify-content: center;
+align-items: center;
+}
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.hidden {
+  display: none;
+}
+#submit{
+  padding: 10px;
+  width: 200px;
+  font-size: 20px;
+}
